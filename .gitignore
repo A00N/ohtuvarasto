@@ -1,8 +1,8 @@
 *.tmp
 __pycache__
 .pytest_cache
-*.covarege
+.covarege
 htmlcov
-*.coveragerc
+.coveragerc
 .DS_Store
 
