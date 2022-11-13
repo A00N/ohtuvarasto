@@ -4,7 +4,7 @@ class Varasto:
         self.saldo = int(min(max(0.0,alku_saldo),tilavuus))
 
     def paljonko_mahtuu(self):
-        return self.tilavuus - self.saldo 
+        return self.tilavuus - self.saldo
 
     def lisaa_varastoon(self, maara):
         if maara < 0:

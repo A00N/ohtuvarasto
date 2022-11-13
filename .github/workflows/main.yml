@@ -29,4 +29,6 @@ jobs:
       - name: Install dependencies
         run: pip install pylint
       - name: Analysing the code with pylint
-      - run: for file in */*.py; do pylint "$file" --fail-under=10.0; done
+        run: find . -name '*.py' -exec pylint {} \;
+      - name: Analyse code
+        run: for file in */*.py; do pylint "$file" --fail-under=10.0; done
